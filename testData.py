@@ -22,7 +22,7 @@ def task_3(x):
 
 
 def task_4(x):
-    return x[0] - 2 * x[1] ** 2 + 4 * x[1]
+    return -x[0] + 2 * x[1] ** 2 - 4 * x[1]
 
 
 def task_5(x):
@@ -38,7 +38,7 @@ def task_7(x):
 
 
 def task_8(x):
-    return (-8 * x[0] ** 2) + 4 * x[0] - x[1] ** 2 + 12 * x[1] - 7
+    return (8 * x[0] ** 2) - 4 * x[0] + x[1] ** 2 - 12 * x[1] + 7
 
 
 def task_9(x):
@@ -185,7 +185,7 @@ def rest_14():
            [],
            [lambda x: 3-x[0]-x[1]-x[2],
             lambda x: 3-x[0]*x[1]*x[2],
-            lambda x: -x[0],lambda x: -x[1],lambda x: -x[3]]]
+            lambda x: -x[0],lambda x: -x[1],lambda x: -x[2]]]
 
 
 def rest_15():
@@ -214,14 +214,14 @@ def rest_17():
 
 test_f = {
     1: test_func,
-    2: task_1,
-    3: task_2,
+    2: test_func,
+    3: test_func,
 }
 
 rest_test = {
-    1: rest_test1,
-    2: rest_test2,
-    3: rest_test3,
+    1: rest_test1(),
+    2: rest_test2(),
+    3: rest_test3(),
 }
 
 task = {
@@ -229,7 +229,20 @@ task = {
     1: task_1,
     2: task_2,
     3: task_3,
-    4: task_4
+    4: task_4,
+    5: task_5,
+    6: task_6,
+    7: task_7,
+    8: task_8,
+    9: task_9,
+    10: task_10,
+    11: task_11,
+    12: task_12,
+    13: task_13,
+    14: task_14,
+    15: task_15,
+    16: task_16,
+    17: task_17,
 }
 
 rest_6_choose = {
@@ -242,8 +255,25 @@ def choose_rest6(n):
     return rest_6_choose[n]
 
 rest = {
-    1: rest_1,
-    2: rest_2,
-    3: rest_3,
-    4: rest_4
+    1: rest_1(),
+    2: rest_2(),
+    3: rest_3(),
+    4: rest_4(),
+    5: rest_5(),
+    7: rest_7(),
+    8: rest_8(),
+    9: rest_9(),
+    10: rest_10(),
+    11: rest_11(),
+    12: rest_12(),
+    13: rest_13(),
+    14: rest_14(),
+    15: rest_15(),
+    16: rest_16(),
+    17: rest_17(),
+}
+
+rest6 = {
+    "a": rest_6_a(),
+    "b": rest_6_b()
 }
